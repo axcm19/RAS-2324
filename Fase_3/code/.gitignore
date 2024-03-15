@@ -1,0 +1,14 @@
+ClassroomsService/node_modules/
+ClassroomsService/package-lock.json
+NotificationsService/node_modules/
+NotificationsService/package-lock.json
+UserService/node_modules/
+UserService/package-lock.json
+GatewayAPI/node_modules/
+GatewayAPI/package-lock.json
+TestsService/node_modules/
+TestsService/package-lock.json
+answers.json
+tests.json
+frontend/package-lock.json
+data/

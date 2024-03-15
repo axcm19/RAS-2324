@@ -1,0 +1,58 @@
+.test-correction-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .test-correction-container h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .test-selection-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    max-height: 60vh; /* Adjust this value as needed */
+    overflow-y: auto;
+  }
+  
+  .test-selection-item button {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .test-selection-item button:hover {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .correct-test-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .correct-test-button:hover {
+    background-color: #218838;
+  }
+  
+  .results-display {
+    margin-top: 20px;
+    text-align: center;
+  }
+  

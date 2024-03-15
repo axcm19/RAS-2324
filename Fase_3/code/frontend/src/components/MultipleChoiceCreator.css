@@ -1,0 +1,111 @@
+.mc-creator-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .mc-creator-container h2,
+  .mc-creator-container h3 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .input-container {
+    margin-bottom: 15px;
+  }
+  
+  .input-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+
+  
+  .questions-list {
+    margin-top: 20px;
+  }
+  
+  .questions-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .questions-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  /* ... (rest of the styles) ... */
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .radio-button-container {
+    margin-right: 5px; /* Adjust spacing as needed */
+  }
+  
+  .choice-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 5px; /* Adjust spacing as needed */
+  }
+  
+  /* Ensure inputs and radio buttons are aligned on the same line */
+  .input-container input[type="text"],
+  .input-container input[type="radio"] {
+    margin: 0;
+    vertical-align: middle; /* Align the inputs vertically */
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: space-between; /* This will put space between the two buttons */
+    margin-top: 20px;
+  }
+  
+  .add-question-button, .finish-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Each button will take up roughly half the container minus margin */
+  }
+  
+  .add-question-button {
+    background-color: #28a745;
+  }
+  
+  .add-question-button:hover {
+    background-color: #218838;
+  }
+  
+  .finish-button {
+    background-color: #3498db;
+  }
+  
+  .finish-button:hover {
+    background-color: #2980b9;
+  }
+  

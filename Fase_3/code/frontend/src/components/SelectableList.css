@@ -1,0 +1,68 @@
+.list-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    position: absolute; /* Added to center the container */
+    top: 50%; /* Added to center the container vertically */
+    left: 50%; /* Added to center the container horizontally */
+    transform: translate(-50%, -50%)
+  }
+  
+  .list-container h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .scrollable-list {
+    overflow-y: auto; /* Make the list scrollable */
+    max-height: 200px; /* Set a max-height for the scroll */
+    margin-bottom: 10px;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .list-item:hover,
+  .list-item.selected {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .list-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .submit-button:hover {
+    background-color: #020864;
+  }
+  
+  

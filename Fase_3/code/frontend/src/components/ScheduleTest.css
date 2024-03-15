@@ -1,0 +1,56 @@
+.schedule-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    position: absolute; /* Added to center the container */
+    top: 50%; /* Added to center the container vertically */
+    left: 50%; /* Added to center the container horizontally */
+    transform: translate(-50%, -50%)
+  }
+  
+  .schedule-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    margin-bottom: 15px;
+  }
+  
+  .input-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  .schedule-form input[type="date"],
+  .schedule-form input[type="time"],
+  .schedule-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  
+  .schedule-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .schedule-button:hover {
+    background-color: #27ae60;
+  }
+  

@@ -1,0 +1,108 @@
+[
+    {
+        "_id": "62bdf3e7e33f8c001f34c8a1",
+        "name": "Teste de Matemática",
+        "throwback": false,
+        "date": "2024-02-15",
+        "duration": 90,
+        "randomness": true,
+        "teachers": ["professor1@example.com", "professor2@example.com"],
+        "students": [
+            {
+                "_id": "abc@gmail.com",
+                "classroom": "A1",
+                "score": 85
+            },
+            {
+                "_id": "student2",
+                "classroom": "A1",
+                "score": 78
+            }
+        ],
+        "classrooms": [
+            {
+                "_id": "A1",
+                "date": "2024-02-15",
+                "version": 1
+            }
+        ],
+        "versions": [
+            {
+                "_id": 1,
+                "questions": [
+                    {
+                        "_id": 101,
+                        "description": "Qual é a raiz quadrada de 81?",
+                        "type": 1,
+                        "grade": 5,
+                        "options": [
+                            {
+                                "description": "9",
+                                "grade": 5,
+                                "solution": "correct"
+                            },
+                            {
+                                "description": "8",
+                                "grade": 0,
+                                "solution": "incorrect"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "62be013fe33f8c001f34c8b2",
+        "name": "Teste de História",
+        "throwback": true,
+        "date": "2024-03-20",
+        "duration": 60,
+        "randomness": false,
+        "teachers": ["professor3@example.com"],
+        "students": [
+            {
+                "_id": "student3",
+                "classroom": "B2",
+                "score": 92
+            },
+            {
+                "_id": "student4",
+                "classroom": "B2",
+                "score": 88
+            }
+        ],
+        "classrooms": [
+            {
+                "_id": "B2",
+                "date": "2024-03-20",
+                "version": 2
+            }
+        ],
+        "versions": [
+            {
+                "_id": 2,
+                "questions": [
+                    {
+                        "_id": 201,
+                        "description": "Quem descobriu o Brasil?",
+                        "type": 1,
+                        "grade": 5,
+                        "options": [
+                            {
+                                "description": "Pedro Álvares Cabral",
+                                "grade": 5,
+                                "solution": "correct"
+                            },
+                            {
+                                "description": "Cristóvão Colombo",
+                                "grade": 0,
+                                "solution": "incorrect"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

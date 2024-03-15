@@ -1,0 +1,90 @@
+version: "3"
+
+services:
+  tests:
+    container_name: tests 
+    build:
+      context: ./TestsService
+    environment:
+      - MONGODB_URL=mongodb://mongodb_container:27017/Probum
+    ports:
+      - "3005:3005"
+    depends_on:
+      - mongo
+    networks:
+      - probumnet
+  
+  classrooms:
+    container_name: classrooms 
+    build:
+      context: ./ClassroomsService
+    environment:
+      - MONGODB_URL=mongodb://mongodb_container:27017/Probum
+    ports:
+      - "3004:3004"
+    depends_on:
+      - mongo
+    networks:
+      - probumnet
+  
+  notifications:
+    container_name: notifications 
+    build:
+      context: ./NotificationsService
+    environment:
+      - MONGODB_URL=mongodb://mongodb_container:27017/Probum
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mongo
+    networks:
+      - probumnet
+
+  users:
+    container_name: users 
+    build:
+      context: ./UserService
+    environment:
+      - MONGODB_URL=mongodb://mongodb_container:27017/Probum
+    ports:
+      - "3002:3002"
+    depends_on:
+      - mongo
+    networks:
+      - probumnet
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+    networks:
+      - probumnet
+
+  api:
+    environment:
+      - MONGODB_URL=mongodb://mongodb_container:27017/Probum
+    container_name: gateway_api
+    build:
+      context: ./GatewayAPI
+    ports:
+      - "3003:3003"
+    depends_on:
+      - mongo
+    networks:
+      - probumnet
+  mongo:
+    container_name: mongodb_container
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db
+    networks:
+      - probumnet
+networks:
+  probumnet:
+    name: probumnet
+    driver: bridge

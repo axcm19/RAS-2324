@@ -1,0 +1,95 @@
+.test-selector-container {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .test-selector-container h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .test-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .test-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .test-item:hover,
+  .test-item.selected {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .test-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  
+
+.test-actions {
+    display: flex;
+    justify-content: center; /* Change this line */
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .visualize-button,
+  .edit-button,
+  .share-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /*flex-grow: 1; /* Make buttons take up equal space */
+    margin: 0 2px; /* Provide some space between buttons */
+  }
+  
+  .visualize-button {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .visualize-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .edit-button {
+    background-color: #f1c40f;
+    color: white;
+  }
+  
+  .edit-button:hover {
+    background-color: #f39c12;
+  }
+
+  .share-button {
+    background-color: #42df57;
+    color: white;
+  }
+  
+  .share-button:hover {
+    background-color: #036319;
+  }
+  
+  .visualize-button:disabled,
+  .edit-button:disabled,
+  .share-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  
