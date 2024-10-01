@@ -2,8 +2,8 @@
 
 Grupo 3-PL2:
 
-- Afonso Marques - PG53601
-- André Alves - PG53651
-- Inês Nogueira - PG53879
-- João Martins - PG53905
-- João Pedro Gonçalves - PG53932
+- Afonso Marques :: pg53601
+- André Alves :: pg53651
+- Inês Nogueira :: pg53879
+- João Martins :: pg53905
+- João Pedro Gonçalves :: pg53932
